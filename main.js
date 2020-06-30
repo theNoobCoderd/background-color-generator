@@ -7,4 +7,6 @@ gradientTwo.addEventListener("input", changeGradient);
 
 function changeGradient() {
     document.body.style.background= "linear-gradient(to right, " + gradientOne.value + " , "+ gradientTwo.value+")";
+    
+    document.querySelector("#currentBg").textContent = document.querySelector("#body").style.background + ";";
 }
